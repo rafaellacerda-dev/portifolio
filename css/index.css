@@ -73,6 +73,18 @@ section {
         padding: 6rem var(--container-padding);
     }
 
+    section:focus {
+        outline: none;
+    }
+
+    h2:focus {
+        outline: none;
+    }
+
+    :focus {
+        outline: none;
+    }
+
     .home {
         flex-direction: column;
         gap: 3rem;
@@ -176,7 +188,6 @@ section {
 
     @supports (position:sticky) {}
 }
-
 
 .hidden {
     display: none !important;
