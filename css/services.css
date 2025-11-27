@@ -1,0 +1,55 @@
+.services {
+    background: var(--second-bg-color);
+    padding-top: 6rem;
+}
+
+.heading {
+    font-size: 6rem;
+    color: var(--text-color);
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    align-items: stretch;
+    padding: .5rem;
+}
+
+.service-box {
+    background: var(--main-color);
+    height: 250px;
+    border-radius: 3rem;
+    color: black;
+    transition: all .25s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    background: transparent;
+    color: var(--text-color);
+    transform: scale(1.03);
+    border: 1px solid var(--main-color);
+}
+
+.service-box .service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.service-info h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-info p {
+    font-size: 1.6rem;
+    max-height: 100px;
+}

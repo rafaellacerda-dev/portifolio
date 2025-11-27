@@ -1,0 +1,44 @@
+.skills .container {
+    background: rgba(225, 53, 44, 0.33);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info img {
+    width: 8rem;
+}
+
+.skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+}

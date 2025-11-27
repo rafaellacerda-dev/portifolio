@@ -1,0 +1,177 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background: var(--bg-color);
+    padding-top: 8rem;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home .home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home .home-content p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    max-width: 60rem;
+}
+
+.home-img img {
+    width: 30vw;
+    max-width: 360px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: transform .25s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 25px var(--main-color));
+}
+
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: .2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: transform .2s ease,
+
+}
+
+.social-icon a:hover {
+    transform: scale(1.15) translateY(-5px);
+    background: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+
+.typing-text {
+    font-size: 3.4rem;
+    font-weight: 600;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.typing-text span {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.typing-text span::before {
+    content: 'Software Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: '';
+    background: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor .6s infinite, typing 20s steps(20) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: 'Web Developer';
+    }
+
+    21%,
+    40% {
+        content: 'Front-end Developer';
+    }
+
+    41%,
+    60% {
+        content: 'Full Stack Developer';
+    }
+
+    61%,
+    80% {
+        content: 'Web Designer';
+    }
+
+    81%,
+    100% {
+        content: 'Cobol Mainframe';
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}

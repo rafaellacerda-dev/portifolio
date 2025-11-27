@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: all .25s ease;
+    border-bottom: 3px solid transparent;
+    padding: .2rem 0;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
